@@ -1,0 +1,125 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* colors */
+    --bright-blue: #3065F8;
+    --light-cyan: #3C9F8F;
+    --light-grayish-blue: #F6F6FE;
+    --dark-blue: #070439;
+    /* fonts */
+    --fonts-raleway: 'raleway', 'sans serif';
+    --fonts-opensans: 'open sans', 'sans serif';
+    /* spacing */
+    --large-spacing: 80px;
+    --medium-spacing: 40px;
+    --small-spacing: 20px;
+}
+
+body {
+    font-size: 16px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 90%;
+    margin: auto;
+}
+
+/*---- Global ----*/
+ul.links {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--fonts-raleway);
+}
+
+.cta {
+    border: none;
+    outline: none;
+    background-color: var(--bright-blue);
+    color: var(--light-grayish-blue);
+    font-weight: bold;
+    padding: 1.1rem 3rem;
+    cursor: pointer;
+}
+/*----X Global X----*/
+
+
+/*---- Header ----*/
+header {
+    margin-top: clamp(1.2rem, 5%, 5rem);
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+}
+
+nav ul li {
+    padding-left: clamp(1.2rem, 5vw, 3.1rem);
+}
+/*----X Header X----*/
+
+/* ---- Hero Section ---- */
+
+.hero-section {
+    margin-top: clamp(1.2rem, 5%, 5rem);
+}
+
+.hero-section .div1 {
+    width: 50%;
+    margin-top: clamp(0rem, 10%, 3rem);
+}
+
+.hero-section .div2 {
+    width: 50%;
+}
+
+.hero-section .div2 img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-section .div1 h1 {
+    font-size: clamp(1.5rem, 6.7vw , 2.4rem);
+    margin-bottom: var(--small-spacing);
+    font-family: var(--fonts-raleway);
+}
+
+.hero-section .div1 p {
+    font-family: var(--fonts-opensans);
+    font-size: clamp(.9rem, 10%, 1.1rem);
+    margin-bottom: calc(var(--small-spacing) + .5rem);
+}
+
+.hero-section .div1 input {
+    display: inline-block;
+    width: 50%;
+    padding: 1rem .3rem;
+}
+/* ----X Hero Section X---- */
+
+/* ---- Promo Section ---- */
+/* ----X Promo Section X---- */
+
+/* ---- Banner Section ---- */
+/* ----X Banner Section X---- */
+
+/* ---- Footer ---- */
+/* ----X Footer X---- */
+
+/* ---- Media Queries ---- */
+
+
+/* X---- Media Queries ----X */
