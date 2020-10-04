@@ -8,6 +8,7 @@
     /* colors */
     --bright-blue: #3065F8;
     --light-cyan: #3C9F8F;
+    --light-blue: #585989;
     --light-grayish-blue: #F6F6FE;
     --dark-blue: #070439;
     /* fonts */
@@ -52,6 +53,11 @@ a {
     padding: 1.1rem 3rem;
     cursor: pointer;
 }
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
 /*----X Global X----*/
 
 
@@ -92,7 +98,7 @@ nav ul li {
 }
 
 .hero-section .div1 h1 {
-    font-size: clamp(1.5rem, 6.7vw , 2.4rem);
+    font-size: clamp(1.5rem, 10vw , 2.4rem);
     margin-bottom: var(--small-spacing);
     font-family: var(--fonts-raleway);
 }
@@ -111,12 +117,154 @@ nav ul li {
 /* ----X Hero Section X---- */
 
 /* ---- Promo Section ---- */
+.promo-section {
+    margin-top: clamp(var(--large-spacing), 10vw, 100px);
+    padding-bottom: clamp(var(--large-spacing), 10vw, 100px);
+    background-image: url('./images/bg-curve-desktop.svg'), url('./images/Vector.svg');
+    background-repeat: no-repeat;
+}
+
+.promo-section .flex-row {
+    padding-top: clamp(var(--large-spacing), 10vw, 130px);
+}
+
+.promo-section .div1 {
+    width: 55%;
+}
+
+.promo-section .div1 h2 {
+    font-size: clamp(1.12rem, 10vw ,2.5rem);
+    font-family: var(--fonts-raleway);
+    margin-bottom: var(--small-spacing);
+}
+
+.promo-section .div1 > p {
+    font-family: var(--fonts-opensans);
+    font-size: clamp(.8rem, 2vw, 1.1rem);
+    margin-bottom: var(--small-spacing);
+    width: 80%;
+}
+
+.promo-section .div1 .cta-link {
+    font-family: var(--fonts-opensans);
+    font-size: clamp(1.12rem, 2v, 1.5rem);
+    color: var(--light-cyan);
+    border-bottom: var(--light-cyan) 1px solid;
+    cursor: pointer;
+}
+
+.promo-section .div1 .card {
+    margin-top: var(--medium-spacing);
+    background: #ffffff;
+    max-width: 60%;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, .1);
+    padding: var(--small-spacing);
+}
+
+.promo-section .div1 .card .quote,
+.promo-section .div1 .card .card-text {
+    margin-bottom: var(--small-spacing);
+}
+
+.promo-section .div1 .card .avatar {
+    border-radius: 50%;
+    max-width: 43px;
+}
+
+.promo-section .div1 .card .person-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.promo-section .div1 .card .avatar-title {
+    font-family: var(--fonts-opensans);
+    font-weight: bold;
+    font-size: clamp(.8rem, 2vw, 1.1rem);
+}
+
+.promo-section .div2 {
+    width: 45%;
+}
+
+.promo-section .div2 img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
 /* ----X Promo Section X---- */
 
 /* ---- Banner Section ---- */
+.banner-section {
+    background-color: var(--light-blue);
+    color: #F6F6FE;
+    padding: clamp(2.5rem, 10vw, 8rem) 0;
+}
+
+.banner-section .div1 {
+    width: 50%;
+}
+
+.banner-section h3 {
+    font-family: var(--fonts-raleway);
+    font-size: clamp(1.2rem, 10vw, 2.3rem);
+    font-weight: 600;
+    margin-bottom: var(--small-spacing);
+}
+
+.banner-section p {
+    font-family: var(--fonts-opensans);
+    font-size: clamp(.8rem, 10vw, 1.2rem);
+    width: 80%;
+}
+
+.banner-section .div2 {
+    width: 50%;
+}
+
+.banner-section .div2 form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.banner-section .div2 form input {
+    width: 80%;
+    display: inline-block;
+    padding: .8rem .3rem;
+    margin-bottom: .5rem
+}
 /* ----X Banner Section X---- */
 
 /* ---- Footer ---- */
+/* .main-footer {
+    background: var(--dark-blue);
+    color: var(--light-grayish-blue);
+    padding: clamp(2.5rem, 10vw, 8rem) 0;
+}
+
+.main-footer * {
+    color: var(--light-grayish-blue);
+}
+
+.main-footer .flex-row {
+    align-items: flex-end;
+} */
+/* 
+.main-footer ul li {
+    color: var(--light-grayish-blue);
+    padding-bottom: var(--small-spacing);
+}
+
+.main-footer .div1 {
+    align-self: flex-start;
+}
+
+.main-footer .div1 .logo-white {
+    width: clamp(100px, 10vw, 400px);
+    height: auto;
+} */
+
 /* ----X Footer X---- */
 
 /* ---- Media Queries ---- */
