@@ -120,7 +120,7 @@ nav ul li {
 .promo-section {
     margin-top: clamp(var(--large-spacing), 10vw, 100px);
     padding-bottom: clamp(var(--large-spacing), 10vw, 100px);
-    background-image: url('./images/bg-curve-desktop.svg'), url('./images/Vector.svg');
+    background-image: url('./images/bg-curve-desktop.svg'), url('./images/curver\ bg\ full.svg');
     background-repeat: no-repeat;
 }
 
@@ -237,33 +237,42 @@ nav ul li {
 /* ----X Banner Section X---- */
 
 /* ---- Footer ---- */
-/* .main-footer {
+.main-footer {
     background: var(--dark-blue);
     color: var(--light-grayish-blue);
-    padding: clamp(2.5rem, 10vw, 8rem) 0;
-}
-
-.main-footer * {
-    color: var(--light-grayish-blue);
+    padding: clamp(2.5rem, 10vw, 6rem) 0;
 }
 
 .main-footer .flex-row {
-    align-items: flex-end;
-} */
-/* 
-.main-footer ul li {
-    color: var(--light-grayish-blue);
-    padding-bottom: var(--small-spacing);
+    padding-right: clamp(0rem, 50vw, 15rem);
 }
 
 .main-footer .div1 {
     align-self: flex-start;
 }
 
+.main-footer .div4 {
+    align-self: center;
+}
+
+.main-footer * {
+    color: var(--light-grayish-blue);
+}
+ 
+.main-footer ul li {
+    color: var(--light-grayish-blue);
+    padding-bottom: var(--small-spacing);
+}
+
 .main-footer .div1 .logo-white {
-    width: clamp(100px, 10vw, 400px);
+    width: clamp(100px, 10vw, 100%);
     height: auto;
-} */
+    margin-bottom: var(--small-spacing);
+}
+
+.main-footer .div1 p {
+    margin-bottom: var(--small-spacing);
+}
 
 /* ----X Footer X---- */
 
