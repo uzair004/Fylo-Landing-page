@@ -25,9 +25,6 @@ body {
 }
 
 .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     max-width: 90%;
     margin: auto;
 }
@@ -66,6 +63,11 @@ header {
     margin-top: clamp(1.2rem, 5%, 5rem);
 }
 
+.header-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav ul{
     height: 100%;
     display: flex;
@@ -73,6 +75,11 @@ nav ul{
 
 nav ul li {
     padding-left: clamp(1.2rem, 5vw, 3.1rem);
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
 }
 /*----X Header X----*/
 
@@ -83,12 +90,12 @@ nav ul li {
 }
 
 .hero-section .div1 {
-    width: 50%;
+    width: clamp(100%, 10vw, 50%);
     margin-top: clamp(0rem, 10%, 3rem);
 }
 
 .hero-section .div2 {
-    width: 50%;
+    width: clamp(100%, 10vw, 50%);
 }
 
 .hero-section .div2 img {
@@ -105,8 +112,9 @@ nav ul li {
 
 .hero-section .div1 p {
     font-family: var(--fonts-opensans);
-    font-size: clamp(.9rem, 10%, 1.1rem);
+    font-size: clamp(1rem, 10%, 1.1rem);
     margin-bottom: calc(var(--small-spacing) + .5rem);
+    width: 80%;
 }
 
 .hero-section .div1 input {
@@ -129,7 +137,8 @@ nav ul li {
 }
 
 .promo-section .div1 {
-    width: 55%;
+    width: clamp(100%, 10vw, 55%);
+    margin-top: clamp(0rem, 10%, 3rem);
 }
 
 .promo-section .div1 h2 {
@@ -140,7 +149,7 @@ nav ul li {
 
 .promo-section .div1 > p {
     font-family: var(--fonts-opensans);
-    font-size: clamp(.8rem, 2vw, 1.1rem);
+    font-size: clamp(1rem, 2vw, 1.1rem);
     margin-bottom: var(--small-spacing);
     width: 80%;
 }
@@ -183,7 +192,7 @@ nav ul li {
 }
 
 .promo-section .div2 {
-    width: 45%;
+    width: clamp(100%, 10vw, 45%);
 }
 
 .promo-section .div2 img {
@@ -201,7 +210,7 @@ nav ul li {
 }
 
 .banner-section .div1 {
-    width: 50%;
+    width: clamp(100%, 10vw, 50%);
 }
 
 .banner-section h3 {
@@ -213,12 +222,13 @@ nav ul li {
 
 .banner-section p {
     font-family: var(--fonts-opensans);
-    font-size: clamp(.8rem, 10vw, 1.2rem);
+    font-size: clamp(1rem, 10vw, 1.2rem);
+    margin-bottom: var(--small-spacing);
     width: 80%;
 }
 
 .banner-section .div2 {
-    width: 50%;
+    width: clamp(100%, 10vw, 50%);
 }
 
 .banner-section .div2 form {
@@ -273,10 +283,71 @@ nav ul li {
 .main-footer .div1 p {
     margin-bottom: var(--small-spacing);
 }
-
 /* ----X Footer X---- */
 
-/* ---- Media Queries ---- */
 
+/* ---- Media Queries ---- */
+@media (max-width: 850px) {
+    .flex-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    .hero-section .div2,
+    .promo-section .div2 {
+        order: -2;
+    }
+
+    .hero-section .div1,
+    .promo-section .div1 {
+        order: 2;
+    }
+
+    .promo-section {
+        background-image: url('./images/bg-curve-mobile.svg'), url('./images/curver\ bg\ mobile\ full.svg');
+        background-size: contain, cover;
+    }
+
+    .main-footer .flex-row {
+        align-items: flex-start;
+    }
+
+    .main-footer .div2,
+    .main-footer .div3 {
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 520px) {
+    header img {
+        max-width: 70%;
+    }
+
+    .hero-section .div1 h1,
+    .hero-section .div1 p {
+        text-align: center;
+        width: 100%;
+        margin: var(--small-spacing) auto;
+    }
+
+    .hero-section form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section .div1 input,
+    .hero-section .div1 .cta {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+}
 
 /* X---- Media Queries ----X */
