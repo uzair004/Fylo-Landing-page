@@ -49,6 +49,7 @@ a {
     font-weight: bold;
     padding: 1.1rem 3rem;
     cursor: pointer;
+    font-size: clamp(16px, 2vw, 18px);
 }
 
 .flex-row {
@@ -90,12 +91,12 @@ header img {
 }
 
 .hero-section .div1 {
-    width: clamp(100%, 10vw, 50%);
+    width: clamp(100%, 5vw, 50%);
     margin-top: clamp(0rem, 10%, 3rem);
 }
 
 .hero-section .div2 {
-    width: clamp(100%, 10vw, 50%);
+    width: clamp(100%, 5vw, 50%);
 }
 
 .hero-section .div2 img {
@@ -105,14 +106,14 @@ header img {
 }
 
 .hero-section .div1 h1 {
-    font-size: clamp(1.5rem, 10vw , 2.4rem);
+    font-size: clamp(1.5rem, 5vw , 2.4rem);
     margin-bottom: var(--small-spacing);
     font-family: var(--fonts-raleway);
 }
 
 .hero-section .div1 p {
     font-family: var(--fonts-opensans);
-    font-size: clamp(1rem, 10%, 1.1rem);
+    font-size: clamp(1rem, 5%, 1.1rem);
     margin-bottom: calc(var(--small-spacing) + .5rem);
     width: 80%;
 }
@@ -128,7 +129,7 @@ header img {
 .promo-section {
     margin-top: clamp(var(--large-spacing), 10vw, 100px);
     padding-bottom: clamp(var(--large-spacing), 10vw, 100px);
-    background-image: url('./images/bg-curve-desktop.svg'), url('./images/curver\ bg\ full.svg');
+    background-image: url('./images/bg-curve-desktop.svg'), url('./images/curve\ bg\ full.svg');
     background-repeat: no-repeat;
 }
 
@@ -137,26 +138,26 @@ header img {
 }
 
 .promo-section .div1 {
-    width: clamp(100%, 10vw, 55%);
+    width: clamp(100%, 5vw, 55%);
     margin-top: clamp(0rem, 10%, 3rem);
 }
 
 .promo-section .div1 h2 {
-    font-size: clamp(1.12rem, 10vw ,2.5rem);
+    font-size: clamp(1.12rem, 5vw ,2.5rem);
     font-family: var(--fonts-raleway);
     margin-bottom: var(--small-spacing);
 }
 
 .promo-section .div1 > p {
     font-family: var(--fonts-opensans);
-    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-size: clamp(.9rem, 2vw, 1.1rem);
     margin-bottom: var(--small-spacing);
     width: 80%;
 }
 
 .promo-section .div1 .cta-link {
     font-family: var(--fonts-opensans);
-    font-size: clamp(1.12rem, 2v, 1.5rem);
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     color: var(--light-cyan);
     border-bottom: var(--light-cyan) 1px solid;
     cursor: pointer;
@@ -165,14 +166,16 @@ header img {
 .promo-section .div1 .card {
     margin-top: var(--medium-spacing);
     background: #ffffff;
-    max-width: 60%;
+    max-width: clamp(70%, 15vw, 60%);
     box-shadow: 8px 8px 20px rgba(0, 0, 0, .1);
     padding: var(--small-spacing);
+    font-family: var(--fonts-opensans);
 }
 
 .promo-section .div1 .card .quote,
 .promo-section .div1 .card .card-text {
     margin-bottom: var(--small-spacing);
+    font-family: var(--fonts-opensans);
 }
 
 .promo-section .div1 .card .avatar {
@@ -188,7 +191,7 @@ header img {
 .promo-section .div1 .card .avatar-title {
     font-family: var(--fonts-opensans);
     font-weight: bold;
-    font-size: clamp(.8rem, 2vw, 1.1rem);
+    font-size: clamp(1rem, 2vw, 1.1rem);
 }
 
 .promo-section .div2 {
@@ -206,7 +209,7 @@ header img {
 .banner-section {
     background-color: var(--light-blue);
     color: #F6F6FE;
-    padding: clamp(2.5rem, 10vw, 8rem) 0;
+    padding: clamp(2.5rem, 5vw, 8rem) 0;
 }
 
 .banner-section .div1 {
@@ -215,14 +218,14 @@ header img {
 
 .banner-section h3 {
     font-family: var(--fonts-raleway);
-    font-size: clamp(1.2rem, 10vw, 2.3rem);
+    font-size: clamp(1.2rem, 5vw, 2.3rem);
     font-weight: 600;
     margin-bottom: var(--small-spacing);
 }
 
 .banner-section p {
     font-family: var(--fonts-opensans);
-    font-size: clamp(1rem, 10vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
     margin-bottom: var(--small-spacing);
     width: 80%;
 }
@@ -250,7 +253,7 @@ header img {
 .main-footer {
     background: var(--dark-blue);
     color: var(--light-grayish-blue);
-    padding: clamp(2.5rem, 10vw, 6rem) 0;
+    padding: clamp(2.5rem, 5vw, 6rem) 0;
 }
 
 .main-footer .flex-row {
@@ -308,7 +311,7 @@ header img {
     }
 
     .promo-section {
-        background-image: url('./images/bg-curve-mobile.svg'), url('./images/curver\ bg\ mobile\ full.svg');
+        background-image: url('./images/bg-curve-mobile.svg'), url('./images/curve\ bg\ mobile\ full.svg');
         background-size: contain, cover;
     }
 
@@ -346,6 +349,45 @@ header img {
         width: 100%;
         margin-bottom: 10px;
         border-radius: 5px;
+    }
+
+    .promo-section .div1 {
+        text-align: center;
+    }
+
+    .promo-section .div1 p {
+        text-align: left;
+        margin: var(--small-spacing) auto;
+        width: 100%;
+    }
+
+    .promo-section .div1 .card {
+        margin: var(--medium-spacing) auto;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .banner-section .div1 {
+        text-align: center;
+    }
+
+    .banner-section .div1 p {
+        text-align: left;
+        margin: var(--small-spacing) auto;
+        width: 100%;
+    }
+
+    .banner-section .div2 {
+        text-align: center;
+    }
+
+    .banner-section .div2 form {
+        align-items: center;
+    }
+
+    .banner-section .div2 form input,
+    .banner-section .div2 form .cta {
+        width: 100%;
     }
 
 }
